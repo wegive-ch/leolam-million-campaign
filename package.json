@@ -8,6 +8,7 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
+    "deploy_stack": "node scripts/deploy-stack.mjs",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
@@ -73,6 +74,9 @@
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^5.2.0",
+    "aws-cdk": "^2.1129.0",
+    "aws-cdk-lib": "^2.261.0",
+    "constructs": "^10.6.0",
     "eslint": "^9.32.0",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.6",
