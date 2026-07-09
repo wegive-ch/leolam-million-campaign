@@ -105,7 +105,7 @@ function Reveal({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
   );
 }
 
-function MissaoLanding() {
+export function MissaoLanding() {
   const [stats, setStats] = useState<CampaignStats | null>(null);
   useEffect(() => {
     let alive = true;
