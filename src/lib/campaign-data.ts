@@ -1,4 +1,4 @@
-// Mock layer — replace `fetchCampaignStats` with the real Leolam API when available.
+// Live stats from the Leolam platform API, with local defaults for fields the API does not expose.
 
 export type CampaignStats = {
   raised: number;
@@ -33,13 +33,13 @@ const FALLBACK_STATS: CampaignStats = {
 
 export async function fetchCampaignStats(): Promise<CampaignStats> {
   try {
-    const res = await fetch("/api/public/campaign-stats", { cache: "no-store" });
+    const res = await fetch("https://api.leolam.com.br/platform-stats", { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     return {
-      raised: Number(data.raised ?? FALLBACK_STATS.raised),
+      raised: Number(data.total_donated ?? data.raised ?? FALLBACK_STATS.raised),
       goal: Number(data.goal ?? FALLBACK_STATS.goal),
-      donors: Number(data.donors ?? FALLBACK_STATS.donors),
+      donors: Number(data.number_members ?? data.donors ?? FALLBACK_STATS.donors),
       organizations: Number(data.organizations ?? FALLBACK_STATS.organizations),
     };
   } catch {
