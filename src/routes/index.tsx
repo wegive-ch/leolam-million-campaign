@@ -285,68 +285,6 @@ function Mission() {
             </p>
           </div>
         </Reveal>
-
-        {/* Destaque: Sorteio + incentivo do mês */}
-        <Reveal delay={220}>
-          <div className="mt-10 relative rounded-3xl overflow-hidden bg-gradient-hero p-[2px] shadow-glow">
-            <div className="rounded-[calc(1.5rem-2px)] bg-navy-deep text-white p-6 sm:p-10 text-left">
-              <div className="flex flex-wrap items-center gap-3 mb-4">
-                <span className="inline-flex items-center gap-2 rounded-full bg-mint px-3 py-1 text-[11px] font-black text-navy-deep uppercase tracking-widest">
-                  <Sparkles className="size-3.5" /> Apenas em julho
-                </span>
-                <span className="inline-flex items-center gap-1.5 rounded-full border border-mint/40 px-3 py-1 text-[11px] font-bold text-mint uppercase tracking-widest">
-                  Tempo limitado
-                </span>
-              </div>
-              <img
-                src={bennyKLogo}
-                alt="Benny.K Jewelry"
-                className="mb-5 h-auto w-52 max-w-full sm:w-64"
-              />
-              <h3 className="font-display font-black text-2xl sm:text-4xl leading-tight text-balance">
-                Doe neste mês e concorra a um{" "}
-                <span className="text-mint">vale-presente de R$ 500 na Benny.K Jewelry</span>.
-              </h3>
-              <p className="mt-4 text-white/80 text-base sm:text-lg leading-relaxed max-w-2xl">
-                Durante todo o mês de <strong className="text-white">julho</strong>, cada
-                doação realizada gera <strong className="text-mint">1 número da sorte</strong>{" "}
-                para concorrer a um vale-presente de R$ 500 na Benny.K Jewelry. Quanto mais
-                você doa, mais chances você tem — e mais perto a comunidade chega dos
-                R$ 1.000.000.
-              </p>
-
-              <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
-                <div className="rounded-2xl bg-white/5 border border-white/10 p-4">
-                  <div className="text-mint font-display font-black text-2xl">1</div>
-                  <div className="text-sm text-white/80 mt-1">Doe qualquer valor pela Leolam</div>
-                </div>
-                <div className="rounded-2xl bg-white/5 border border-white/10 p-4">
-                  <div className="text-mint font-display font-black text-2xl">2</div>
-                  <div className="text-sm text-white/80 mt-1">Receba automaticamente seus números da sorte</div>
-                </div>
-                <div className="rounded-2xl bg-white/5 border border-white/10 p-4">
-                  <div className="text-mint font-display font-black text-2xl">3</div>
-                  <div className="text-sm text-white/80 mt-1">Concorra ao vale-presente e ajude a atingir o milhão</div>
-                </div>
-              </div>
-
-
-              <div className="mt-8 flex flex-wrap gap-3">
-                <a
-                  href={DONATE_URL}
-                  className="inline-flex items-center gap-2 rounded-full bg-gradient-mint px-6 py-3.5 font-bold text-navy-deep shadow-glow hover:scale-[1.03] transition-transform"
-                >
-                  <Heart className="size-5" /> Doar e concorrer
-                </a>
-                <ShareMenu />
-              </div>
-              <p className="mt-4 text-xs text-white/60">
-                * Promoção válida somente durante o mês de julho. O sorteio é um incentivo — o
-                que realmente importa é chegarmos juntos à marca histórica de R$ 1.000.000.
-              </p>
-            </div>
-          </div>
-        </Reveal>
       </div>
     </section>
   );
