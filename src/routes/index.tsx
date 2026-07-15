@@ -17,6 +17,7 @@ import {
   Linkedin,
 } from "lucide-react";
 import heroCoin from "@/assets/hero-coin.jpg";
+import bennyKLogo from "@/assets/benny-k-logo-transparent.png";
 import {
   fetchCampaignStats,
   organizations,
@@ -51,7 +52,7 @@ export const Route = createFileRoute("/")({
 });
 
 const DONATE_URL = "https://leolam.com.br/doe-agora";
-const SHARE_URL = "https://leolam.com.br/missao-1-milhao";
+const SHARE_URL = "https://ummilhao.leolam.com.br";
 const SHARE_TEXT =
   "Estamos chegando a R$ 1.000.000 em doações na Missão 1 Milhão da Leolam. Faça parte:";
 
@@ -297,6 +298,11 @@ function Mission() {
                   Tempo limitado
                 </span>
               </div>
+              <img
+                src={bennyKLogo}
+                alt="Benny.K Jewelry"
+                className="mb-5 h-auto w-52 max-w-full sm:w-64"
+              />
               <h3 className="font-display font-black text-2xl sm:text-4xl leading-tight text-balance">
                 Doe neste mês e concorra a um{" "}
                 <span className="text-mint">vale-presente de R$ 500 na Benny.K Jewelry</span>.
@@ -684,7 +690,7 @@ function Footer() {
             Redes sociais
           </div>
           <div className="flex gap-3">
-            <a href="https://instagram.com/leolam" aria-label="Instagram" className="size-10 rounded-full bg-white/10 hover:bg-mint hover:text-navy-deep grid place-items-center transition-colors">
+            <a href="https://www.instagram.com/leolam_br" aria-label="Instagram" className="size-10 rounded-full bg-white/10 hover:bg-mint hover:text-navy-deep grid place-items-center transition-colors">
               <Instagram className="size-5" />
             </a>
             <a href="https://facebook.com/leolam" aria-label="Facebook" className="size-10 rounded-full bg-white/10 hover:bg-mint hover:text-navy-deep grid place-items-center transition-colors">
